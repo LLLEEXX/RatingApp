@@ -1,0 +1,254 @@
+/* @import url('https://fonts.google.com/specimen/Overpass'); */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+body{
+  background-color: hsl(216, 12%, 8%);
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: 'overpass', sans-serif;
+}
+@media only screen and (min-width: 768px) {
+  
+  
+
+#container{
+  width: 500px;
+  min-width: 400px;
+  background-color: hsl(213, 19%, 18%);
+  padding: 40px;
+  border-radius: 40px;
+}
+
+h1{
+  color: hsl(0, 0%, 100%);
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+p{
+  color: hsl(217, 12%, 63%);
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+
+#starIcon{
+  display: flex;
+  align-items: center;
+  background-color: red;
+  height: 100%;
+  border-radius: 50%;
+  background-color: hsl(213, 19%, 18%);
+  border: 1px solid hsl(216, 12%, 54%);
+  width: 50px;
+  height: 50px;
+  margin-bottom: 15px;
+}
+
+#starIcon svg{
+  margin: auto;
+  display: block;
+}
+
+#buttons{
+  display: flex;
+  justify-content: space-between;
+}
+
+.ratings{
+  margin-top: 10px;
+  padding: 15px;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  font-size: 15px;
+  font-weight: 700;
+  color: hsl(216, 12%, 54%);
+  background-color: hsl(213, 19%, 18%);
+  border: 1px solid hsl(216, 12%, 54%);
+}
+
+.ratings:hover{
+  cursor: pointer;
+  background-color: hsl(25, 97%, 53%);
+  color: hsl(0, 0%, 100%);
+}
+
+#submitButtonBody{
+  margin-top: 30px;
+}
+
+#submitButton{
+  font-size: larger;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(25, 97%, 53%);
+  border: none;
+  border-radius: 30px;
+  width: 100%;
+  height: 50px;
+}
+
+#submitButton:hover{
+  cursor: pointer;
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(25, 97%, 53%);
+}
+
+.ratings.selected{
+  background-color: hsl(217, 12%, 63%);
+  color: hsl(0, 0%, 100%);
+}
+
+/* Thank you page CSS */
+#tyContainer{
+  display: grid;
+  place-items: center;
+  margin: 0;
+  width: 500px;
+  min-width: 400px;
+  background-color: hsl(213, 19%, 18%);
+  padding: 40px;
+  border-radius: 40px;
+}
+
+
+#givenRating{
+  margin-top: 50px;
+  text-align: center;
+  width: 55%;
+  background-color: hsla(216, 12%, 8%, 0.5);
+  color: hsl(25, 97%, 53%, 0.7);
+  padding: 5px;
+  border-radius: 20px;
+}
+
+h4{
+  margin-top: 30px;
+  font-size: xx-large;
+  color: hsl(0, 0%, 100%);
+}
+#tySen{
+  padding: 0 30px;
+  margin-top: 10px;
+  text-align: center;
+}
+}
+
+/*[FOR PHONES]*/
+@media only screen and (max-width: 600px) {
+
+  #container{
+    width: 90%;
+    margin: 0 auto;
+    min-width: 200px;
+    background-color: hsl(213, 19%, 18%);
+    padding: 20px;
+    border-radius: 40px;
+}
+
+h1{
+  color: hsl(0, 0%, 100%);
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+p{
+  color: hsl(217, 12%, 63%);
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+
+#starIcon{
+  display: flex;
+  align-items: center;
+  height: 100%;
+  border-radius: 50%;
+  background-color: hsl(213, 19%, 18%);
+  border: 1px solid hsl(216, 12%, 54%);
+  width: 50px;
+  height: 50px;
+  margin-bottom: 15px;
+}
+
+#starIcon svg{
+  margin: auto;
+  display: block;
+}
+
+#buttons{
+  display: flex;
+  justify-content: space-between;
+}
+
+.ratings{
+  margin-top: 10px;
+  padding: 15px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  font-size: 15px;
+  font-weight: 700;
+  color: hsl(216, 12%, 54%);
+  background-color: hsl(213, 19%, 18%);
+  border: 1px solid hsl(216, 12%, 54%);
+}
+
+
+#submitButtonBody{
+  margin-top: 30px;
+}
+
+#submitButton{
+  font-size: larger;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(25, 97%, 53%);
+  border: none;
+  border-radius: 30px;
+  width: 100%;
+  height: 50px;
+}
+
+.ratings.selected{
+  background-color: hsl(217, 12%, 63%);
+  color: hsl(0, 0%, 100%);
+}
+/* PHONE THANK YOU PAGE CSS */
+#tyContainer{
+  display: grid;
+  place-items: center;
+  margin: 0 auto;
+  width: 90%;
+  min-width: 200px;
+  background-color: hsl(213, 19%, 18%);
+  padding: 20px;
+  border-radius: 15px;
+}
+
+
+#givenRating{
+  padding: 5px;
+  margin-top: 50px;
+  text-align: center;
+  width: 80%;
+  background-color: hsla(216, 12%, 8%, 0.5);
+  color: hsl(25, 97%, 53%, 0.7);
+  border-radius: 20px;
+}
+
+h4{
+  margin-top: 30px;
+  font-size: x-large;
+  color: hsl(0, 0%, 100%);
+}
+#tySen{
+  margin-top: 10px;
+  text-align: center;
+  font-size: 15px;
+}
+}
